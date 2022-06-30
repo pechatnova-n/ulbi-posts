@@ -4,6 +4,6 @@
     <file url="file://$PROJECT_DIR$/src/App.jsx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/PostItem.jsx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/PostList.jsx" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/index.jsx" charset="UTF-8" />
   </component>
 </project>

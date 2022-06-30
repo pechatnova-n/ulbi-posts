@@ -1,32 +1,35 @@
-import React, {useState, useRef} from 'react';
-import PostList from './components/PostList.jsx';
+import React, {useEffect, useState} from 'react';
 import './styles/App.css';
-import PostForm from "./components/PostForm";
+import {BrowserRouter} from "react-router-dom";
+import Navbar from "./components/UI/Navbar/Navbar";
+import AppRouter from "./components/AppRouter";
+import {AuthContext} from "./context";
 
 
 function App() {
-    /*57min*/
-    const [posts, setPosts] = useState([
-        {id: "1", title: "JavaScript", body: "Js - язык программирования"},
-        {id: "2", title: "JavaScript 2", body: "Js - язык программирования"},
-        {id: "3", title: "JavaScript 3", body: "Js - язык программирования"},
-    ]);
+    /*2.47  lazy loader*/
+    const [isAuth, setIsAuth] = useState(false);
+    const [isLoading, setLoading] = useState(true);
 
-    const createPost = (newPost) => {
-        setPosts([...posts, newPost])
-    }
+    useEffect(() => {
+        if(localStorage.getItem('auth')) {
+            setIsAuth(true)
+        }
+        setLoading(false);
+    }, [])
 
-    const removePost = (post) => {
-        setPosts(posts.filter(p => p.id !== post.id))
-    }
-
-
-  return (
-      <div className="App">
-          <PostForm create={createPost} />
-          <PostList remove={removePost} posts={posts} title="Список постов 1" />
-      </div>
-  );
+    return (
+        <AuthContext.Provider value={{
+            isAuth,
+            setIsAuth,
+            isLoading
+        }}>
+            <BrowserRouter>
+                <Navbar />
+                <AppRouter />
+            </BrowserRouter>
+        </AuthContext.Provider>
+    )
 }
 
 export default App;
