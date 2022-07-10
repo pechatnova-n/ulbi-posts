@@ -9,7 +9,7 @@ import HomePage from "../pages/HomePage";
 
 
 export const privateRoutes = [
-    {path: '/', component: <HomePage/>},
+    {path: '/', component: <HomePage/>, index: 'index'},
     {path: '*', component: <NotFound/>},
     {path: '/about', component: <About/>},
     {path: '/posts', component: <Posts/>},

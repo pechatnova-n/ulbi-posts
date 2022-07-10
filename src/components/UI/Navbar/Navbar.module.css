@@ -1,4 +1,5 @@
 .navbar {
+    flex: 0 0 auto;
     background: lightgray;
     height: 50px;
     width: 100vw;
@@ -23,6 +24,7 @@
 .navbar__links a:hover{
     text-decoration: underline;
 }
-.navbar__links a.active{
+.active-link{
+    color: red;
     font-weight: bold;
 }

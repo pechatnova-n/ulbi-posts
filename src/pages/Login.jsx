@@ -9,7 +9,7 @@ const Login = () => {
         event.preventDefault();
         setIsAuth(true);
         localStorage.setItem('auth', 'true')
-        console.log('btn login')
+        console.log(isAuth)
     }
 
     return (

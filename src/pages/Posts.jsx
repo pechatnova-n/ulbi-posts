@@ -52,7 +52,6 @@ function Posts() {
 
     return (
         <div className="App">
-            <button onClick={fetchPosts}>get posts</button>
             <MyButton style={{marginTop: '30px'}} onClick={() => {setModal(true)}}>Создать пользователя</MyButton>
             <MyModal visible={modal} setVisible={setModal}>
                 <PostForm create={createPost} />
@@ -71,8 +70,6 @@ function Posts() {
                 : <PostList remove={removePost} posts={sortedAndSearchedPosts} title="Список постов" />
             }
             <Pagination page={page} changePage={changePage} totalPages={totalPages}/>
-
-
         </div>
     );
 }
