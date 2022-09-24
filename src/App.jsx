@@ -24,7 +24,7 @@ function App() {
             setIsAuth,
             isLoading
         }}>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <AppRouter />
             </BrowserRouter>
         </AuthContext.Provider>
