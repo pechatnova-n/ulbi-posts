@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5427299.css",
-    "main.js": "/static/js/main.e72f1c91.js",
-    "index.html": "/index.html",
-    "main.e5427299.css.map": "/static/css/main.e5427299.css.map",
-    "main.e72f1c91.js.map": "/static/js/main.e72f1c91.js.map"
+    "main.css": "/ulbi-posts/static/css/main.e5427299.css",
+    "main.js": "/ulbi-posts/static/js/main.e72f1c91.js",
+    "index.html": "/ulbi-posts/index.html",
+    "main.e5427299.css.map": "/ulbi-posts/static/css/main.e5427299.css.map",
+    "main.e72f1c91.js.map": "/ulbi-posts/static/js/main.e72f1c91.js.map"
   },
   "entrypoints": [
     "static/css/main.e5427299.css",
