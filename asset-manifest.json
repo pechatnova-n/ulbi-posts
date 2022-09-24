@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ulbi-posts/static/css/main.e5427299.css",
-    "main.js": "/ulbi-posts/static/js/main.e9f9fb66.js",
+    "main.js": "/ulbi-posts/static/js/main.8f57f20c.js",
     "index.html": "/ulbi-posts/index.html",
     "main.e5427299.css.map": "/ulbi-posts/static/css/main.e5427299.css.map",
-    "main.e9f9fb66.js.map": "/ulbi-posts/static/js/main.e9f9fb66.js.map"
+    "main.8f57f20c.js.map": "/ulbi-posts/static/js/main.8f57f20c.js.map"
   },
   "entrypoints": [
     "static/css/main.e5427299.css",
-    "static/js/main.e9f9fb66.js"
+    "static/js/main.8f57f20c.js"
   ]
 }
