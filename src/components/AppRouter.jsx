@@ -28,7 +28,6 @@ const AppRouter = () => {
                 <Route path="posts" element={<Posts/>} />
                 <Route path="posts/:id" element={<PostIdPage/>} />
             </Route>
-            {/*<Navigate to="login" replace={true} />*/}
 
         </Routes>
         : <Routes>
